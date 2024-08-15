@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/darkly.min.css">
+    <title>Empresas</title>
+</head>
+
+    <!--<a href="{% url 'empresa/' empresa.pk %}">Edit</a>
+    <form action="{% url 'Empresadelete' empresa.pk %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Borrar</button>
+    </form>
+    <a href="{% url 'Empresalist' %}">Lista</a>
+   <h1 align="center">Empresas</h1>
+    <br>
+    <h5 align="right"><a href="add_empresa" >Añadir Empresa</a> </h5>
+    
+   
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                
+                <td>Nombre</td>
+                
+                <td>Tipo</td>
+                
+                <td>Favorita</td>
+                
+            </tr>
+        </thead>
+        <tbody>
+              {% if object_list %}
+            {% for empresa in object_list %}
+            <tr>
+                
+                <td>{{empresa.Nombre}}</td>
+                
+                <td>{{empresa.Tipo}}</td>
+                
+                <td>{{empresa.Favorita}}</td>
+                <td>
+                    <a class="btn btn-primary" href="{% url 'modificar_empresa' empresa.EmpresaId %}">Editar</a>
+                    <a class="btn btn-danger" href="{% url 'eli_empresa' empresa.EmpresaId%}">Borrar</a>
+                </td>
+            </tr>
+            {% endfor %}
+
+            {% else %}
+             <h1>No hay registros</h1>
+
+            {% endif %} 
+        </tbody>
+    </table>--> 
+</body>
+</html>

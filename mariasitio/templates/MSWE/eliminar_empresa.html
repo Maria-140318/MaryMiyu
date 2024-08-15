@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/darkly.min.css">
+    <title>Empresas</title>
+</head>
+<body>
+    
+    <h1>Esta seguro de eliminar la empresa con"{{ empresa.Nombre }}"?</h1>
+        {% csrf_token %}
+        <h3>¿Desea eliminar el registro?</h3>
+        <button class="btn btn-danger" type="submit">
+            Si
+        </button>
+        <a class="btn btn-default" href="/empresa">Cancelar</a>
+ 
+</body>
+</html>
